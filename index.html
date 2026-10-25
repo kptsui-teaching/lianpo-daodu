@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>《廉頗藺相如列傳》範文導讀｜漢華中學中國語文科</title>
+<style>
+:root{
+  --blue:#2563eb;--blue-dark:#1d4ed8;--blue-soft:#eff6ff;--blue-mid:#dbeafe;
+  --ink:#1f2937;--muted:#4b5563;--line:#e5e7eb;--card:#fff;--bg:#f4f6fb;
+  --ok:#16a34a;--ok-bg:#dcfce7;--bad:#dc2626;--bad-bg:#fee2e2;--warn:#b45309;--warn-bg:#fef3c7;
+  --radius:14px;--shadow:0 1px 4px rgba(0,0,0,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Noto Sans TC","PingFang TC","PingFang HK","Microsoft JhengHei","Noto Sans CJK TC",sans-serif;background:var(--bg);color:var(--ink);font-size:17px;line-height:1.65}
+a{color:var(--blue)}
+.skip{position:absolute;left:-9999px}.skip:focus{left:8px;top:8px;background:#fff;padding:8px 12px;z-index:100;border-radius:8px}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);box-shadow:0 1px 0 rgba(37,99,235,.06)}
+.topbar-inner{max-width:880px;margin:0 auto;padding:10px 14px 8px}
+.brand{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px;margin-bottom:6px}
+.brand .school{font-size:.85rem;color:var(--blue);font-weight:700;letter-spacing:.02em}
+.brand h1{margin:0;font-size:1.15rem;font-weight:800}
+.nav{display:flex;flex-wrap:wrap;gap:6px}
+.nav a{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:6px 12px;border-radius:999px;background:var(--blue-soft);color:var(--blue-dark);text-decoration:none;font-weight:700;font-size:.92rem;border:1px solid transparent}
+.nav a:hover,.nav a:focus{background:var(--blue);color:#fff;outline:none}
+main{max-width:880px;margin:0 auto;padding:16px 14px 80px}
+.sec{margin:22px 0 28px;scroll-margin-top:110px}
+.sec>h2{margin:0 0 12px;font-size:1.35rem;color:var(--blue-dark);padding-bottom:6px;border-bottom:3px solid var(--blue-mid)}
+.sec>h3,.card h3{margin:16px 0 8px;font-size:1.08rem}
+.card{background:var(--card);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow);margin:10px 0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+@media(max-width:700px){.grid2,.grid3{grid-template-columns:1fr}}
+.pill{display:inline-block;background:var(--blue-soft);color:var(--blue-dark);border-radius:999px;padding:2px 10px;font-size:.85rem;font-weight:700;margin-right:4px}
+.muted{color:var(--muted);font-size:.95rem}
+.person{border-left:4px solid var(--blue);padding-left:12px;margin:10px 0}
+.story{border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:#fafbff}
+.story h4{margin:0 0 8px;color:var(--blue-dark)}
+.story dl{margin:0;display:grid;grid-template-columns:4.5em 1fr;gap:4px 8px}
+.story dt{font-weight:700;color:var(--muted)}.story dd{margin:0}
+.vocab{display:grid;gap:8px}
+.vocab-item{display:grid;grid-template-columns:minmax(7em,auto) 1fr;gap:8px 12px;padding:10px 12px;background:#fafbff;border-radius:10px;border:1px solid var(--line)}
+.vocab-item b{color:var(--blue-dark)}
+@media(max-width:560px){.vocab-item{grid-template-columns:1fr}}
+.struct ul{margin:6px 0;padding-left:1.2em}.struct li{margin:4px 0}
+.student-form{display:grid;grid-template-columns:1fr 1fr 1.4fr;gap:10px}
+@media(max-width:640px){.student-form{grid-template-columns:1fr}}
+label.field{display:block;font-weight:700;font-size:.92rem;margin-bottom:4px}
+input.field,select.field{width:100%;min-height:48px;padding:10px 12px;font:inherit;border:2px solid #d1d5db;border-radius:10px;background:#fff}
+input.field:focus,select.field:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(37,99,235,.2)}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.tabs button{flex:1;min-width:120px;min-height:48px;font:inherit;font-weight:700;border:2px solid var(--blue);border-radius:12px;background:#fff;color:var(--blue);cursor:pointer}
+.tabs button.active,.tabs button[aria-selected="true"]{background:var(--blue);color:#fff}
+.prog-row{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:.95rem;color:var(--muted);margin:8px 0 4px}
+.bar{height:10px;background:#e5e7eb;border-radius:6px;overflow:hidden}
+.bar>div{height:100%;background:var(--blue);width:0;transition:width .3s}
+.overall{background:var(--blue-soft);border:1px solid var(--blue-mid);border-radius:12px;padding:12px 14px;margin:12px 0}
+.opt{display:flex;align-items:flex-start;gap:10px;min-height:56px;padding:12px;margin:8px 0;border:2px solid #d1d5db;border-radius:12px;background:#fff;cursor:pointer;text-align:left}
+.opt input{width:22px;height:22px;margin-top:3px;flex:none}
+.opt.sel{border-color:var(--blue);background:var(--blue-soft)}
+.opt.ok{border-color:var(--ok);background:var(--ok-bg)}
+.opt.bad{border-color:var(--bad);background:var(--bad-bg)}
+.stem{font-size:1.08rem;font-weight:700;margin:0 0 10px}
+.fb{margin-top:12px;padding:12px;border-radius:10px}
+.fb.ok{background:var(--ok-bg)}.fb.bad{background:var(--bad-bg)}
+.btn{font:inherit;font-weight:700;min-height:52px;width:100%;margin-top:12px;border:0;border-radius:12px;background:var(--blue);color:#fff;cursor:pointer}
+.btn:disabled{background:#9ca3af;cursor:not-allowed}
+.btn.sec{background:#fff;color:var(--blue);border:2px solid var(--blue)}
+.btn.ok{background:var(--ok)}
+.btn.warn{background:#d97706}
+.btn-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:500px){.btn-row{grid-template-columns:1fr}}
+.big{font-size:1.8rem;font-weight:800;text-align:center;margin:8px 0}
+.rv{border-top:1px solid var(--line);padding:10px 0}.rv .t{font-weight:700}.c{color:#15803d}.w{color:#b91c1c}
+.note{background:var(--warn-bg);border-left:4px solid var(--warn);padding:10px 12px;border-radius:0 10px 10px 0;margin:10px 0;font-size:.95rem}
+.video-box{aspect-ratio:16/9;background:linear-gradient(135deg,#dbeafe,#eff6ff);border:2px dashed #93c5fd;border-radius:14px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;padding:20px;text-align:center;color:var(--muted)}
+.video-box iframe{width:100%;height:100%;border:0;border-radius:12px}
+.video-wrap{position:relative;aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:#000}
+.footer{max-width:880px;margin:0 auto;padding:8px 14px 28px;color:var(--muted);font-size:.88rem;text-align:center}
+[hidden]{display:none!important}
+@media print{
+  .topbar{position:static;box-shadow:none}
+  .nav,.btn,#quizPanel .btn,.student-form,input,select,.tabs{display:none!important}
+  body{background:#fff;font-size:14px}
+  .card,.story,.vocab-item{box-shadow:none;border:1px solid #ccc}
+  .sec{break-inside:avoid}
+}
+
+.classic{font-size:1.05rem;line-height:2;letter-spacing:.02em}
+.classic p{margin:0 0 1em}
+.classic h3{margin:18px 0 10px;font-size:1.1rem;color:var(--blue-dark);border-left:4px solid var(--blue);padding-left:10px}
+.classic .attr{margin-top:12px;padding-top:10px;border-top:1px dashed var(--line);font-size:.9rem;color:var(--muted);line-height:1.55}
+.yuyi{line-height:1.85}
+.yuyi p{margin:0 0 .95em}
+.yuyi h3{margin:18px 0 10px;font-size:1.1rem;color:var(--blue-dark);border-left:4px solid var(--blue);padding-left:10px}
+.sec-head-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px;margin:0 0 12px;padding-bottom:6px;border-bottom:3px solid var(--blue-mid)}
+.sec-head-row h2{margin:0;padding:0;border:0;font-size:1.35rem;color:var(--blue-dark)}
+.btn-toggle{font:inherit;font-weight:700;font-size:.88rem;min-height:40px;padding:6px 14px;border-radius:999px;border:2px solid var(--blue);background:#fff;color:var(--blue);cursor:pointer;width:auto;margin:0}
+.btn-toggle:hover,.btn-toggle:focus{background:var(--blue);color:#fff;outline:none}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">跳至正文</a>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <span class="school">漢華中學中國語文科</span>
+      <h1>《廉頗藺相如列傳》範文導讀</h1>
+    </div>
+    <nav class="nav" aria-label="章節導航">
+      <a href="#daodu">導讀</a>
+      <a href="#quanwen">全文</a>
+      <a href="#yuyi">語譯</a>
+      <a href="#zici">重點字詞</a>
+      <a href="#zhangfa">結構／章法</a>
+      <a href="#zice">自測</a>
+      <a href="#shipin">影片</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ========== 1 導讀 ========== -->
+<section class="sec" id="daodu">
+  <h2>一、導讀</h2>
+  <p class="muted">對象：中四至中六　｜　篇章：《史記・廉頗藺相如列傳》（節錄）　｜　作者：司馬遷</p>
+
+  <div class="card">
+    <h3>背景</h3>
+    <p>戰國後期，七雄並立，其中<strong>秦國最強</strong>，不斷東進；趙國相對較弱，卻擁有稀世珍寶<strong>和氏璧</strong>。秦昭王提出以十五城換璧，實則意圖欺詐。趙國君臣左右為難——給璧怕得不到城，不給又怕招來兵禍。本文即由此寫起，記述藺相如與廉頗在外交與內政上的作為。</p>
+  </div>
+
+  <div class="card">
+    <h3>人物簡介</h3>
+    <div class="person"><span class="pill">主角</span><strong>藺相如</strong>——原為宦者令繆賢的舍人，後因完璧歸趙、澠池之會立功，拜為上卿。機智勇敢、能言善辯，以國家為先。</div>
+    <div class="person"><span class="pill">主角</span><strong>廉頗</strong>——趙國名將，攻城野戰功勳卓著。性格直率，一度不服藺相如，後知錯能改，負荊請罪。</div>
+    <div class="person"><span class="pill">配角</span><strong>趙王</strong>——趙惠文王。面對強秦常陷兩難，能採納諫言，任用藺相如。</div>
+    <div class="person"><span class="pill">對手</span><strong>秦王</strong>——秦昭襄王。恃強凌弱、傲慢無禮，但亦知權衡利害，最終厚遇藺相如。</div>
+  </div>
+
+  <div class="card">
+    <h3>主線三分段</h3>
+    <div class="grid3" style="margin-top:10px">
+      <article class="story">
+        <h4>① 完璧歸趙</h4>
+        <dl>
+          <dt>起因</dt><dd>秦以十五城易璧，趙君臣兩難；繆賢薦藺相如出使。</dd>
+          <dt>過程</dt><dd>相如察秦無誠意，以璧有瑕取回；請齋戒五日，暗使從者懷璧歸趙；廷斥秦王。</dd>
+          <dt>結果</dt><dd>秦終不予城，趙亦不予璧；相如拜為上大夫。</dd>
+          <dt>性格</dt><dd><strong>機智勇敢、膽識過人</strong>（寧許負秦曲、完璧歸趙）。</dd>
+        </dl>
+      </article>
+      <article class="story">
+        <h4>② 澠池之會</h4>
+        <dl>
+          <dt>起因</dt><dd>秦趙澠池相會；廉頗與趙王約：三十日不還則立太子，以絕秦望。</dd>
+          <dt>過程</dt><dd>秦王令趙王鼓瑟並記於冊；相如迫使秦王擊缻，並以「咸陽為趙王壽」回敬。</dd>
+          <dt>結果</dt><dd>秦終不能加勝於趙；相如拜為上卿，位在廉頗之右。</dd>
+          <dt>性格</dt><dd><strong>針鋒相對、捨身維護國尊嚴</strong>。</dd>
+        </dl>
+      </article>
+      <article class="story">
+        <h4>③ 負荊請罪</h4>
+        <dl>
+          <dt>起因</dt><dd>廉頗不服相如「徒以口舌」位居其上，揚言必辱之。</dd>
+          <dt>過程</dt><dd>相如引車避匿；舍人請辭；相如說明「先國家之急而後私讎」。</dd>
+          <dt>結果</dt><dd>廉頗肉袒負荊請罪，二人為刎頸之交。</dd>
+          <dt>性格</dt><dd>相如<strong>顧全大局、寬容大度</strong>；廉頗<strong>知錯能改、坦率真誠</strong>。</dd>
+        </dl>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<!-- ========== 2 全文 ========== -->
+<section class="sec" id="quanwen">
+  <h2>二、全文</h2>
+  <p class="muted">《史記・廉頗藺相如列傳》（節錄）　｜　文本依教育局「指定文言經典學習材料」參考版本</p>
+  <div class="card classic">
+    <p>廉頗者，趙之良將也。趙惠文王十六年，廉頗為趙將伐齊，大破之，取陽晉，拜為上卿，以勇氣聞於諸侯。藺相如者，趙人也，為趙宦者令繆賢舍人。</p>
+
+    <h3>完璧歸趙</h3>
+    <p>趙惠文王時，得楚和氏璧。秦昭王聞之，使人遺趙王書，願以十五城請易璧。趙王與大將軍廉頗諸大臣謀：欲予秦，秦城恐不可得，徒見欺；欲勿予，即患秦兵之來。計未定，求人可使報秦者，未得。宦者令繆賢曰：「臣舍人藺相如可使。」王問：「何以知之？」對曰：「臣嘗有罪，竊計欲亡走燕，臣舍人相如止臣，曰：『君何以知燕王？』臣語曰：『臣嘗從大王與燕王會境上，燕王私握臣手，曰：「願結友。」以此知之，故欲往。』相如謂臣曰：『夫趙彊而燕弱，而君幸於趙王，故燕王欲結於君。今君乃亡趙走燕，燕畏趙，其勢必不敢留君，而束君歸趙矣。君不如肉袒伏斧質請罪，則幸得脫矣。』臣從其計，大王亦幸赦臣。臣竊以為其人勇士，有智謀，宜可使。」於是王召見，問藺相如曰：「秦王以十五城請易寡人之璧，可予不？」相如曰：「秦彊而趙弱，不可不許。」王曰：「取吾璧，不予我城，奈何？」相如曰：「秦以城求璧而趙不許，曲在趙；趙予璧而秦不予趙城，曲在秦。均之二策，寧許以負秦曲。」王曰：「誰可使者？」相如曰：「王必無人，臣願奉璧往使。城入趙而璧留秦；城不入，臣請完璧歸趙。」趙王於是遂遣相如奉璧西入秦。</p>
+    <p>秦王坐章臺見相如，相如奉璧奏秦王。秦王大喜，傳以示美人及左右，左右皆呼萬歲。相如視秦王無意償趙城，乃前曰：「璧有瑕，請指示王。」王授璧，相如因持璧卻立，倚柱，怒髮上衝冠，謂秦王曰：「大王欲得璧，使人發書至趙王，趙王悉召羣臣議，皆曰：『秦貪，負其彊，以空言求璧，償城恐不可得。』議不欲予秦璧。臣以為布衣之交尚不相欺，況大國乎！且以一璧之故逆彊秦之驩，不可。於是趙王乃齋戒五日，使臣奉璧，拜送書於庭。何者？嚴大國之威以修敬也。今臣至，大王見臣列觀，禮節甚倨；得璧，傳之美人，以戲弄臣。臣觀大王無意償趙王城邑，故臣復取璧。大王必欲急臣，臣頭今與璧俱碎於柱矣！」相如持其璧睨柱，欲以擊柱。秦王恐其破璧，乃辭謝固請，召有司案圖，指從此以往十五都予趙。相如度秦王特以詐佯為予趙城，實不可得，乃謂秦王曰：「和氏璧，天下所共傳寶也。趙王恐，不敢不獻。趙王送璧時，齋戒五日，今大王亦宜齋戒五日，設九賓於廷，臣乃敢上璧。」秦王度之，終不可彊奪，遂許齋五日，舍相如廣成傳。相如度秦王雖齋，決負約不償城，乃使其從者衣褐，懷其璧，從徑道亡，歸璧於趙。</p>
+    <p>秦王齋五日後，乃設九賓禮於廷，引趙使者藺相如。相如至，謂秦王曰：「秦自繆公以來二十餘君，未嘗有堅明約束者也。臣誠恐見欺於王而負趙，故令人持璧歸，間至趙矣。且秦彊而趙弱，大王遣一介之使至趙，趙立奉璧來；今以秦之彊而先割十五都予趙，趙豈敢留璧而得罪於大王乎？臣知欺大王之罪當誅，臣請就湯鑊。唯大王與羣臣孰計議之！」秦王與羣臣相視而嘻。左右或欲引相如去，秦王因曰：「今殺相如，終不能得璧也，而絕秦趙之驩，不如因而厚遇之，使歸趙，趙王豈以一璧之故欺秦邪！」卒廷見相如，畢禮而歸之。相如既歸，趙王以為賢大夫，使不辱於諸侯，拜相如為上大夫。秦亦不以城予趙，趙亦終不予秦璧。</p>
+
+    <h3>澠池之會</h3>
+    <p>其後秦伐趙，拔石城。明年，復攻趙，殺二萬人。秦王使使者告趙王，欲與王為好會於西河外澠池。趙王畏秦，欲毋行。廉頗、藺相如計曰：「王不行，示趙弱且怯也。」趙王遂行，相如從。廉頗送至境，與王訣曰：「王行，度道里會遇之禮畢，還，不過三十日。三十日不還，則請立太子為王，以絕秦望。」王許之，遂與秦王會澠池。秦王飲酒酣，曰：「寡人竊聞趙王好音，請奏瑟。」趙王鼓瑟。秦御史前書曰：「某年月日，秦王與趙王會飲，令趙王鼓瑟。」藺相如前曰：「趙王竊聞秦王善為秦聲，請奏盆缻秦王，以相娛樂。」秦王怒，不許。於是相如前進缻，因跪請秦王。秦王不肯擊缻。相如曰：「五步之內，相如請得以頸血濺大王矣！」左右欲刃相如，相如張目叱之，左右皆靡。於是秦王不懌，為一擊缻。相如顧召趙御史書曰：「某年月日，秦王為趙王擊缻。」秦之羣臣曰：「請以趙十五城為秦王壽。」藺相如亦曰：「請以秦之咸陽為趙王壽。」秦王竟酒，終不能加勝於趙。趙亦盛設兵以待秦，秦不敢動。</p>
+
+    <h3>負荊請罪</h3>
+    <p>既罷歸國，以相如功大，拜為上卿，位在廉頗之右。廉頗曰：「我為趙將，有攻城野戰之大功，而藺相如徒以口舌為勞，而位居我上，且相如素賤人，吾羞，不忍為之下。」宣言曰：「我見相如，必辱之。」相如聞，不肯與會。相如每朝時，常稱病，不欲與廉頗爭列。已而相如出，望見廉頗，相如引車避匿。於是舍人相與諫曰：「臣所以去親戚而事君者，徒慕君之高義也。今君與廉頗同列，廉君宣惡言而君畏匿之，恐懼殊甚，且庸人尚羞之，況於將相乎！臣等不肖，請辭去。」藺相如固止之，曰：「公之視廉將軍孰與秦王？」曰：「不若也。」相如曰：「夫以秦王之威，而相如廷叱之，辱其羣臣，相如雖駑，獨畏廉將軍哉？顧吾念之，彊秦之所以不敢加兵於趙者，徒以吾兩人在也。今兩虎共鬥，其勢不俱生。吾所以為此者，以先國家之急而後私讎也。」廉頗聞之，肉袒負荊，因賓客至藺相如門謝罪。曰：「鄙賤之人，不知將軍寬之至此也。」卒相與驩，為刎頸之交。</p>
+    <p class="attr">出處：司馬遷《史記・廉頗藺相如列傳》（節錄）；文本依教育局「指定文言經典學習材料」參考版本。</p>
+  </div>
+</section>
+
+<!-- ========== 3 語譯 ========== -->
+<section class="sec" id="yuyi">
+  <div class="sec-head-row">
+    <h2>三、語譯</h2>
+    <button type="button" class="btn-toggle" id="yuyiToggle" aria-controls="yuyiBody" aria-expanded="true">隱藏語譯</button>
+  </div>
+  <div id="yuyiBody">
+  <p class="note">以下語譯供自學參考，考試請以課文原文為準。</p>
+  <div class="card yuyi">
+    <p>廉頗是趙國出色的將領。趙惠文王十六年，廉頗擔任趙軍統帥攻打齊國，大敗齊軍，奪取陽晉，被任命為上卿，憑着勇氣聞名於各諸侯國。藺相如是趙國人，擔任宦者令繆賢的門客。</p>
+
+    <h3>完璧歸趙</h3>
+    <p>趙惠文王在位時，得到楚國的和氏璧。秦昭王聽說後，派人送信給趙王，表示願意用十五座城交換這塊璧。趙王和大將軍廉頗等大臣商量：如果把璧給秦國，又怕得不到那些城，白白受騙；如果不給，又擔心秦軍來攻。主意未定，想找一個能回覆秦國的使者，卻找不到合適的人。宦者令繆賢說：「我的門客藺相如可以出使。」趙王問：「你憑甚麼知道？」繆賢回答：「我曾經犯過罪，私下打算逃往燕國。我的門客相如阻止我，問：『您怎麼知道燕王可靠？』我告訴他：『我曾跟隨大王在邊界上會見燕王，燕王私下握着我的手說「願意結交為友」，所以知道，才想投奔燕國。』相如對我說：『趙國強而燕國弱，您又得趙王寵幸，所以燕王想跟您結交。現在您逃離趙國投奔燕國，燕國畏懼趙國，勢必不敢收留您，反而會把您捆起來送回趙國。您不如脫去上衣、伏在斧質上請罪，或許還能倖免。』我聽從他的計策，大王也幸好赦免了我。我私下認為這個人是勇士，又有智謀，適合出使。」於是趙王召見藺相如，問他：「秦王用十五座城換我的璧，可不可以給？」相如說：「秦強趙弱，不能不答應。」趙王說：「拿走我的璧，卻不給我城，怎麼辦？」相如說：「秦用城求璧而趙不答應，理虧在趙；趙給了璧而秦不給趙城，理虧在秦。衡量這兩種做法，寧可答應，讓秦國承擔理虧的責任。」趙王問：「誰可以出使？」相如說：「大王如果實在沒有合適的人，我願意捧着璧前去。城歸入趙國，璧就留在秦國；城不歸入趙國，我就把璧完好帶回趙國。」趙王於是派相如捧璧西行進入秦國。</p>
+    <p>秦王坐在章臺接見相如，相如捧璧進獻給秦王。秦王大喜，把璧傳給美人和左右侍從觀看，左右都高呼萬歲。相如看出秦王無意把城償付給趙國，便上前說：「璧上有瑕疵，請讓我指給大王看。」秦王把璧交給他，相如便拿着璧後退站立，靠着柱子，憤怒得頭髮直豎、頂起帽子，對秦王說：「大王想得到璧，派人送信到趙國，趙王召集全體大臣商議，都說：『秦國貪婪，倚仗自己強大，用空話來求璧，償付的城恐怕得不到。』商量着不想把璧給秦國。我認為平民之間的交往尚且不互相欺騙，何況大國呢！再說為了一塊璧而得罪強大的秦國，也不妥當。於是趙王便齋戒五日，派我捧着璧，在朝廷上拜送國書。為甚麼這樣做？是為了尊重大國的威嚴、表示敬意。現在我來到這裏，大王只在一般的臺觀接見我，禮節十分傲慢；得到璧以後，又傳給美人，來戲弄我。我看大王無意把城邑償付給趙王，所以又把璧取回來。大王如果一定要逼迫我，我的頭今天就跟璧一起撞碎在柱子上！」相如拿着璧斜視着柱子，作出要撞擊的樣子。秦王怕他撞破璧，便道歉並堅決請求，召來官員察看地圖，指着從這裏起的十五座城給趙國。相如估計秦王只是用欺詐手段假裝給趙城，實際上得不到，便對秦王說：「和氏璧是天下公認的寶物。趙王畏懼，不敢不獻。趙王送璧時齋戒了五日，現在大王也應當齋戒五日，在朝廷上設置九賓大禮，我才敢獻上璧。」秦王估量後，終究不能強行奪取，便答應齋戒五日，安排相如住在廣成傳舍。相如估計秦王即使齋戒，也必定違背約定不償付城池，便叫隨從穿上粗布衣服，把璧藏在懷裏，從小路逃走，把璧送回趙國。</p>
+    <p>秦王齋戒五日後，便在朝廷上舉行九賓大禮，延請趙國使者藺相如。相如到達後對秦王說：「秦國從繆公以來二十多位君主，不曾有過堅守明確約定的。我實在怕被大王欺騙而對不起趙國，所以派人拿着璧回去，已經從小道到達趙國了。再說秦強趙弱，大王只要派一名使者到趙國，趙國立刻會捧璧送來；現在憑着秦國的強大，如果先割十五座城給趙國，趙國怎敢留着璧而得罪大王呢？我知道欺騙大王的罪應當處死，我請求受湯鑊之刑。請大王與大臣們仔細商量！」秦王和大臣們面面相覷，發出苦笑。左右有人想把相如拉下去，秦王卻說：「現在殺了相如，終究還是得不到璧，反而斷絕秦趙的交好，不如趁此好好款待他，讓他回趙國。趙王難道會為了一塊璧欺騙秦國嗎！」終於在朝廷上正式接見相如，完成禮儀後放他回去。相如回國後，趙王認為他是賢能的大夫，出使能不辱於諸侯，任命他為上大夫。秦國也沒有把城給趙國，趙國最終也沒有把璧給秦國。</p>
+
+    <h3>澠池之會</h3>
+    <p>後來秦國攻打趙國，攻下石城。第二年又進攻趙國，殺了兩萬人。秦王派使者告訴趙王，想與趙王在西河外的澠池友好相會。趙王畏懼秦國，想不去。廉頗、藺相如商量說：「大王不去，就顯得趙國既弱又膽怯。」趙王於是前往，相如隨行。廉頗送到邊境，跟趙王訣別說：「大王此行，估計路程和會見禮儀完畢回來，不超過三十日。如果三十日還不回來，就請立太子為王，以斷絕秦國要挾的念頭。」趙王答應了，便與秦王在澠池相會。秦王喝酒喝到興頭上，說：「我私下聽說趙王愛好音樂，請彈瑟吧。」趙王便彈了瑟。秦國御史上前記錄：「某年某月某日，秦王與趙王會飲，命令趙王彈瑟。」藺相如上前說：「趙王私下聽說秦王擅長演奏秦地樂曲，請獻上瓦盆給秦王敲擊，互相娛樂。」秦王發怒，不肯答應。於是相如上前獻上瓦盆，跪下請求秦王。秦王不肯敲。相如說：「五步之內，我要把頸上的血濺到大王身上了！」左右想殺相如，相如睜大眼睛喝斥他們，左右都嚇得後退。於是秦王不高興地敲了一下瓦盆。相如回頭召來趙國御史記錄：「某年某月某日，秦王為趙王敲擊瓦盆。」秦國大臣們說：「請用趙國十五座城為秦王祝壽。」藺相如也說：「請用秦國的咸陽為趙王祝壽。」秦王一直到酒宴結束，始終不能壓過趙國。趙國也大舉陳兵防備秦國，秦國不敢妄動。</p>
+
+    <h3>負荊請罪</h3>
+    <p>澠池會結束回國後，因為相如功勞大，被任命為上卿，職位在廉頗之上。廉頗說：「我當趙國的將領，有攻城野戰的大功，藺相如只憑口舌立下功勞，卻位居我之上；而且相如本來出身卑微，我感到羞恥，不甘心位居他之下。」並揚言：「我見到相如，一定要羞辱他。」相如聽說後，不肯跟他會面。每次上朝，相如常常稱病，不想跟廉頗爭位次。過了一些時候，相如外出，遠遠望見廉頗，便掉轉車子避開。於是門客們一起進諫說：「我們離開親戚來事奉您，只是仰慕您的高尚品德。現在您與廉頗地位相當，廉君放出惡言，您卻害怕躲避，恐懼得很厲害；普通人尚且以此為恥，何況是將相呢！我們不才，請允許告辭。」藺相如堅決挽留他們，說：「你們看廉將軍跟秦王比，誰更厲害？」門客說：「比不上秦王。」相如說：「憑着秦王那樣的威勢，我還敢在朝廷上喝斥他、羞辱他的大臣；我雖然無能，難道單單害怕廉將軍嗎？只是我想到，強大的秦國之所以不敢對趙國用兵，只因為我們兩人都在。現在兩隻老虎互相爭鬥，勢必不能一起存活。我這樣做，是把國家的危急放在前面，把私人仇怨放在後面。」廉頗聽說後，脫去上衣、背着荊條，由賓客引領到藺相如門前請罪，說：「我這個粗鄙低賤的人，不知道將軍寬容我到這種地步。」兩人終於和好，成為可共生死的朋友。</p>
+  </div>
+  </div>
+</section>
+
+<!-- ========== 4 重點字詞 ========== -->
+<section class="sec" id="zici">
+  <h2>四、重點字詞</h2>
+  <p class="muted">以下約十二組文言詞語／成語，宜連同課文語境記誦。</p>
+  <div class="card vocab">
+    <div class="vocab-item"><b>完璧歸趙</b><span>把和氏璧完好地歸還趙國。後喻把原物完好地歸還主人。出自本文。</span></div>
+    <div class="vocab-item"><b>負荊請罪</b><span>背着荊條請求懲罰。喻主動認錯、請求責罰。廉頗「肉袒負荊」請罪於藺相如。</span></div>
+    <div class="vocab-item"><b>刎頸之交</b><span>可共生死的交情（刎：割頸）。廉藺「卒相與驩，為刎頸之交」。</span></div>
+    <div class="vocab-item"><b>肉袒</b><span>脫去上衣，露出肩膀。表示請罪、願受責罰（「肉袒負荊」「肉袒伏斧質」）。</span></div>
+    <div class="vocab-item"><b>鼓瑟／擊缻</b><span>鼓瑟：彈奏瑟；擊缻：敲擊瓦盆。澠池會上秦辱趙鼓瑟，相如迫使秦王擊缻，以維國體。</span></div>
+    <div class="vocab-item"><b>先國家之急而後私讎</b><span>把國家的危急放在前面，把私人仇怨放在後面。相如避廉頗之由，全文主旨句之一。</span></div>
+    <div class="vocab-item"><b>遺（讀「位」）</b><span>送給。「使人遺趙王書」——派人送信給趙王。</span></div>
+    <div class="vocab-item"><b>見（被動）</b><span>被。「徒見欺」——白白地被欺騙。</span></div>
+    <div class="vocab-item"><b>負</b><span>①使……承擔：「寧許以負秦曲」；②倚仗：「秦貪，負其彊」。</span></div>
+    <div class="vocab-item"><b>倨</b><span>傲慢。「禮節甚倨」——接待禮節十分傲慢。</span></div>
+    <div class="vocab-item"><b>睨</b><span>斜視。「相如持其璧睨柱」——斜眼看着柱子，作勢欲擊。</span></div>
+    <div class="vocab-item"><b>右</b><span>上位（古代以右為尊）。「位在廉頗之右」——官位在廉頗之上。</span></div>
+  </div>
+</section>
+
+<!-- ========== 5 結構／章法 ========== -->
+<section class="sec" id="zhangfa">
+  <h2>五、結構／章法</h2>
+  <div class="card struct">
+    <h3>1. 三事並列，層層推進</h3>
+    <p>節錄以<strong>完璧歸趙 → 澠池之會 → 將相和（負荊請罪）</strong>三件典型事件組織全文：由外交鬥智，到會盟維尊嚴，再到內部團結。事件各自獨立，又前後呼應（位次變化推動「將相和」）。</p>
+    <h3>2. 對比映襯</h3>
+    <ul>
+      <li><strong>廉頗 ↔ 藺相如</strong>：一勇一智、一直率一寬容，合傳中互相襯托。</li>
+      <li><strong>秦王 ↔ 藺相如</strong>：傲慢欺詐 vs 機智勇敢。</li>
+      <li><strong>舍人之淺見 ↔ 相如之遠見</strong>：引出「先國家之急」的胸襟。</li>
+    </ul>
+    <h3>3. 對話推動情節</h3>
+    <p>文中大量記言：繆賢薦語、相如廷斥秦王、「頸血濺大王」、與舍人對答、「先國家之急而後私讎」等，以語言寫性格，並推動衝突升級與化解。</p>
+    <h3>4. 以事寫人</h3>
+    <p>《史記》列傳特色：不空論品德，而透過具體事件、動作（持璧睨柱、張目叱之、引車避匿、肉袒負荊）與神態（怒髮上衝冠、相視而嘻）塑造鮮明形象。本節錄屬<strong>合傳</strong>體例。</p>
+  </div>
+</section>
+
+<!-- ========== 6 自測 ========== -->
+<section class="sec" id="zice">
+  <h2>六、自測</h2>
+  <p class="muted">題目源自 Edcafe 練習庫（內容理解／字詞解釋／寫作手法各 20 題，合共 60 題）。可先作答；交卷前請填學生資料。</p>
+
+  <div class="card" id="studentCard">
+    <h3>學生資料（交卷必填）</h3>
+    <div class="student-form">
+      <div>
+        <label class="field" for="cls">班別</label>
+        <input class="field" id="cls" name="cls" placeholder="例：4A" maxlength="4" autocomplete="off" required>
+      </div>
+      <div>
+        <label class="field" for="sid">學號</label>
+        <input class="field" id="sid" name="sid" placeholder="例：01" maxlength="4" autocomplete="off" required>
+      </div>
+      <div>
+        <label class="field" for="sname">姓名</label>
+        <input class="field" id="sname" name="sname" placeholder="請輸入姓名" maxlength="20" autocomplete="name" required>
+      </div>
+    </div>
+    <p class="muted" style="margin:8px 0 0">班別可用如 4A、5C、6D；學號請填兩位數字（如 01）。</p>
+  </div>
+
+  <div class="overall" id="overallBox">
+    <div class="prog-row"><strong>整體進度</strong><span id="overallText">0 / 60 題　總分 0</span></div>
+    <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="60" aria-valuenow="0" id="overallBar"><div id="overallFill"></div></div>
+    <div class="prog-row" style="margin-top:8px;font-size:.9rem">
+      <span>內容理解：<b id="scContent">0</b>/20</span>
+      <span>字詞解釋：<b id="scVocab">0</b>/20</span>
+      <span>寫作手法：<b id="scRhet">0</b>/20</span>
+    </div>
+  </div>
+
+  <div class="tabs" role="tablist" aria-label="練習部分">
+    <button type="button" role="tab" id="tab-content" aria-selected="true" aria-controls="panel-quiz" data-sec="content">內容理解（20）</button>
+    <button type="button" role="tab" id="tab-vocab" aria-selected="false" aria-controls="panel-quiz" data-sec="vocab">字詞解釋（20）</button>
+    <button type="button" role="tab" id="tab-rhet" aria-selected="false" aria-controls="panel-quiz" data-sec="rhetorical">寫作手法（20）</button>
+  </div>
+
+  <div class="card" id="panel-quiz" role="tabpanel">
+    <div class="prog-row"><span id="secProgText">第 1 / 20 題</span><span id="secScoreText">本節答對：0</span></div>
+    <div class="bar" id="secBar" role="progressbar" aria-valuemin="0" aria-valuemax="20" aria-valuenow="0"><div id="secFill"></div></div>
+    <form id="qform" onsubmit="return false" style="margin-top:12px">
+      <fieldset style="border:0;margin:0;padding:0">
+        <legend class="stem" id="stem"></legend>
+        <div id="opts"></div>
+      </fieldset>
+      <div id="fb" class="fb" hidden></div>
+      <button type="button" class="btn" id="checkBtn" disabled>檢查答案</button>
+      <div class="btn-row">
+        <button type="button" class="btn sec" id="nextBtn" hidden>下一題</button>
+        <button type="button" class="btn ok" id="secDoneBtn" hidden>完成本節</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="card" id="secResult" hidden>
+    <h3 id="secResultTitle">本節完成</h3>
+    <p class="big" id="secFinal"></p>
+    <p id="secFinalMsg" class="muted" style="text-align:center"></p>
+    <div class="btn-row">
+      <button type="button" class="btn sec" id="retrySecBtn">重做本節</button>
+      <button type="button" class="btn" id="goNextSecBtn">下一節</button>
+    </div>
+    <button type="button" class="btn warn" id="submitEarlyBtn" style="margin-top:10px" hidden>交卷（已完成全部）</button>
+    <h3>答題回顧</h3>
+    <div id="secReview"></div>
+  </div>
+
+  <div class="card" id="finalResult" hidden>
+    <h3>全部完成・交卷</h3>
+    <p class="big" id="finalScore"></p>
+    <p id="finalDetail" style="text-align:center"></p>
+    <p id="submitMsg" class="note" hidden></p>
+    <div class="btn-row">
+      <button type="button" class="btn ok" id="submitBtn">交卷至老師試算表</button>
+      <button type="button" class="btn sec" id="retryAllBtn">全部重做</button>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 7 影片 ========== -->
+<section class="sec" id="shipin">
+  <h2>七、影片｜寶寶老師陪你快速溫範文</h2>
+  <div class="card">
+    <p><a id="videoTitleLink" href="#" target="_blank" rel="noopener">寶寶老師陪你快速溫範文｜第一集《廉頗藺相如列傳》</a></p>
+    <div id="videoArea"></div>
+    <p class="muted" style="margin-top:10px">老師可在頁面腳本頂部設定 <code>YOUTUBE_ID</code>（只填影片 ID，例如 <code>dQw4w9WgXcQ</code>）。</p>
+  </div>
+</section>
+
+</main>
+<footer class="footer">漢華中學中國語文科　｜　《廉頗藺相如列傳》範文導讀　｜　供課堂投影及學生自學</footer>
+
+<script>
+(function () {
+"use strict";
+
+/* ===== 老師設定（部署後請填寫） ===== */
+const GAS_WEBAPP_URL = '';   // Apps Script 網頁應用程式 URL
+const YOUTUBE_ID = '';       // YouTube 影片 ID（非完整網址）
+
+/* ===== 題庫：與 Edcafe 來源完全一致；o[0] 為正確答案 ===== */
+var Q_CONTENT = [{"s":"藺相如原本的身分是：","o":["宦者令繆賢的舍人","趙國上卿，位在廉頗之上","秦國使者","趙國大將"],"e":"其後才因功升遷。"},{"s":"秦王提出以十五城易璧，趙王陷入的兩難是：","o":["給璧怕得不到城，不給又怕秦兵來攻","不知和氏璧在哪裏，無法交給秦國","不想出使秦國，又不敢拒絕秦王","想把和氏璧送給楚國，又怕得罪秦國，左右為難"],"e":"「欲予秦，秦城恐不可得，徒見欺；欲勿予，即患秦兵之來。」"},{"s":"繆賢推薦藺相如，主要理由是：","o":["藺相如曾勸他肉袒請罪而獲赦，可見其勇而有智謀","藺相如是繆賢的親戚，繆賢想藉機提拔自己的家人做官","藺相如武功高強，曾經在燕國擊敗刺客","藺相如認識秦王，可以說服秦王交出城池"],"e":"「臣竊以為其人勇士，有智謀。」"},{"s":"藺相如勸繆賢不要逃往燕國，是因為他分析：","o":["燕王結交繆賢只因他得趙王寵幸，燕畏趙，必定把他綁回趙國","燕國太遠，繆賢年紀太大，不能長途跋涉逃走到燕國","燕王討厭繆賢，曾經在境上會面時羞辱過他，必定加害","燕國比趙國強大，燕王一向看不起趙國，繆賢投燕必定受辱而死"],"e":"顯出藺相如洞悉形勢。"},{"s":"藺相如主張答應秦國易璧的理由是：","o":["秦強趙弱，答應了可使理虧在秦","和氏璧不值錢，換十五城十分划算","趙王想要十五城","秦王是好人，說話一定算數，不會欺騙趙國"],"e":"「寧許以負秦曲。」"},{"s":"藺相如出使前向趙王承諾：","o":["城入趙則璧留秦；城不入，則完璧歸趙","一定帶回十五座城池，否則甘願在秦國以死謝罪","一定殺掉秦王，替趙國除去心腹大患","把璧送給秦國，換取兩國永遠和平"],"e":"成語「完璧歸趙」出處。"},{"s":"秦王在章台接見藺相如，並把璧傳給美人及左右觀看，反映：","o":["秦王輕慢趙國，無意償城","秦王很尊重趙國","秦王很慷慨，願與眾人分享寶物","秦王不認識璧，要讓左右鑑定真偽"],"e":"藺相如由此判斷秦王無誠意。"},{"s":"藺相如以甚麼藉口取回和氏璧？","o":["說璧上有瑕疵，要指給秦王看","說璧是假的，要拿回趙國更換","說要先齋戒五日，才可獻上","說要送給美人"],"e":"「璧有瑕，請指示王。」"},{"s":"藺相如要求秦王齋戒五日、設九賓之禮，真正目的是：","o":["爭取時間，暗中送璧回趙","希望秦王變得虔誠","想留在秦國享受九賓之禮的榮耀","想顯示趙國富有，令秦王不敢輕視"],"e":"同時藉此尊顯趙國。"},{"s":"藺相如如何把璧送回趙國？","o":["讓隨從穿粗布衣、懷着璧從小路逃回","親自日夜兼程帶回趙國交給趙王","把璧交給趙國派來的使者，由使者大張旗鼓地護送回國","託秦王派使者護送和氏璧回趙國"],"e":"「從徑道亡，歸璧於趙。」"},{"s":"秦王最終沒有殺藺相如，原因是：","o":["殺了也得不到璧，反而斷絕秦趙交好，不如厚待放他回去","秦王害怕藺相如，擔心殺了他會被趙國報復","秦王很喜歡藺相如的才華，想把他留在秦國重用，不忍殺害","趙國派兵救他，秦王不敢殺害趙國使者"],"e":"顯出秦王權衡利害。"},{"s":"澠池之會前，廉頗與趙王約定三十日不還便立太子，用意是：","o":["斷絕秦國以趙王作要挾的念頭","讓太子早日掌權，以便趙王退休","廉頗想篡位，趁趙王不在時立太子","表示不信任趙王"],"e":"「以絕秦望。」"},{"s":"秦王令趙王鼓瑟並命御史記錄，目的是：","o":["羞辱趙國，顯示秦尊趙卑","欣賞音樂，聽趙王演奏樂器","表示友好，記錄兩國盛會","記錄歷史"],"e":"藺相如隨即反擊。"},{"s":"藺相如如何迫使秦王擊缻？","o":["以「五步之內，相如請得以頸血濺大王矣」相威脅","送上重禮，請求秦王為趙王擊缻助興","請趙王下令，命秦王必須為趙王擊缻","以和氏璧作交換條件，答應秦王擊缻後便把璧送回秦國"],"e":"捨身維護國家尊嚴。"},{"s":"面對秦臣「請以趙十五城為秦王壽」，藺相如回應「請以秦之咸陽為趙王壽」，表現他：","o":["針鋒相對、機智應變","膽小怕事、委曲求全","貪圖土地、乘機索取","想討好秦王"],"e":"以秦都城回敬，寸步不讓。"},{"s":"廉頗不服藺相如位居其上，理由是：","o":["自己有攻城野戰之大功，藺相如只憑口舌，且出身卑賤","藺相如曾得罪他，在趙王面前說他壞話","藺相如年紀太輕，沒有資格位居上卿之職","藺相如是秦國人，廉頗懷疑他是秦國派來的奸細，不能信任"],"e":"「相如素賤人，吾羞，不忍為之下。」"},{"s":"藺相如的舍人為何請辭？","o":["認為藺相如畏懼廉頗太甚，令他們感到羞恥","藺相如不給俸祿，他們生活難以維持下去","他們想投靠廉頗，以求將來得到更高官位","藺相如將要離開趙國投奔秦國，舍人不願跟隨他背叛國家"],"e":"「庸人尚羞之，況於將相乎！」"},{"s":"藺相如以「公之視廉將軍孰與秦王」反問舍人，要說明：","o":["自己連秦王都敢當廷叱責，並非懼怕廉頗","廉頗其實比秦王更可怕，所以自己必須避開廉頗以保性命","秦王比廉頗好，所以他願意向秦王讓步","舍人看錯了人，藺相如其實並不在意"],"e":"為下文說明真正原因作鋪墊。"},{"s":"「吾所以為此者，以先國家之急而後私讎也」的意思是：","o":["我這樣做，是因為把國家的危急放在前面，把私人仇怨放在後面","我這樣做，是為了報私仇，等待時機向廉頗報復","我先處理好與廉將軍之間的私人恩怨，然後才有心力處理國家的危急大事","國家危急，所以我要先報私仇，然後才處理國家大事"],"e":"表現顧全大局。"},{"s":"廉頗知道藺相如的用心後：","o":["肉袒負荊，到藺相如府上請罪，二人成為刎頸之交","仍然不服，在朝廷上繼續宣揚藺相如的惡言","離開趙國，投奔魏國，從此不再與藺相如見面","到趙王面前告狀，指責藺相如沽名釣譽，要求趙王罷免藺相如"],"e":"「卒相與驩，為刎頸之交。」"}];
+var Q_VOCAB = [{"s":"「使人遺趙王書」中「遺」字的意思是：","o":["送給","遺失","遺留","遺憾"],"e":"讀「位」，送信給趙王。"},{"s":"「願以十五城請易璧」中「易」字的意思是：","o":["交換","容易","改變","簡易"],"e":"用十五座城交換和氏璧。"},{"s":"「徒見欺」中「見」字的意思是：","o":["被","看見","會見","見解"],"e":"白白地被欺騙。"},{"s":"「求人可使報秦者」中「報」字的意思是：","o":["答覆、回覆","報仇、報復","報告","報答"],"e":"找可以出使回覆秦國的人。"},{"s":"「竊計欲亡走燕」中「亡」字的意思是：","o":["逃亡","死亡","滅亡","丟失"],"e":"繆賢私下打算逃往燕國。"},{"s":"「可予不」中「不」字的意思是：","o":["同「否」","不是、不對","沒有","不要"],"e":"可以給他嗎？"},{"s":"「曲在趙」中「曲」字的意思是：","o":["理虧","彎曲","樂曲","委屈"],"e":"趙國不答應，理虧在趙。"},{"s":"「均之二策」中「均」字的意思是：","o":["衡量、比較","平均、平分","都、全部","均勻"],"e":"衡量這兩種策略。"},{"s":"「寧許以負秦曲」中「負」字的意思是：","o":["使……承擔","背負、背着","辜負","失敗"],"e":"寧可答應，讓秦國承擔理虧的責任。"},{"s":"「相如因持璧，卻立，倚柱」中「卻」字的意思是：","o":["後退","卻是","推辭","冷卻"],"e":"藺相如退後站立，靠着柱子。"},{"s":"「秦貪，負其彊」中「負」字的意思是：","o":["倚仗","背負","辜負","失敗"],"e":"秦國貪婪，倚仗其強大。"},{"s":"「禮節甚倨」中「倨」字的意思是：","o":["傲慢","恭敬","簡單","隆重"],"e":"秦王接見的禮節十分傲慢。"},{"s":"「相如持其璧睨柱」中「睨」字的意思是：","o":["斜視","凝視","閉眼","指着"],"e":"藺相如斜眼看着柱子。"},{"s":"「乃辭謝固請」中「固」字的意思是：","o":["堅決","本來","鞏固","固執"],"e":"秦王道歉並堅決請求。"},{"s":"「召有司案圖」中「案」字的意思是：","o":["同「按」，察看","案件、公案文書","桌子","方案"],"e":"召來官員察看地圖。"},{"s":"「相如度秦王特以詐佯為予趙城」中「度」字的意思是：","o":["估計、揣測","渡過、越過","制度","溫度"],"e":"讀「鐸」，藺相如揣測秦王。"},{"s":"「乃使其從者衣褐」中「衣」字的意思是：","o":["穿（作動詞）","衣服、衣着打扮","衣裳","衣冠"],"e":"讀「意」，叫隨從穿上粗布衣服。"},{"s":"「唯大王與羣臣孰計議之」中「孰」字的意思是：","o":["同「熟」，仔細","誰、哪一位，表疑問","哪個","成熟"],"e":"請秦王與羣臣仔細商議。"},{"s":"「左右皆靡」中「靡」字的意思是：","o":["倒退、潰退","奢靡、浪費","沒有","美麗"],"e":"秦王左右被藺相如喝退。"},{"s":"「位在廉頗之右」中「右」字的意思是：","o":["上位（古代以右為尊）","右邊的方向","保佑（以右手護佑）","右手（拿着地圖的手）"],"e":"藺相如地位在廉頗之上。"}];
+var Q_RHET = [{"s":"節錄以完璧歸趙、澠池之會、將相和三個事件組織全文，作用是：","o":["以典型事件多角度刻畫人物性格","使文章冗長，增加史書的篇幅","交代地理，說明秦趙兩國的位置","純粹記錄歷史"],"e":"事件層層推進，人物形象漸趨完整。"},{"s":"「怒髮上衝冠」運用了：","o":["誇張","比喻","對偶","反問"],"e":"突出藺相如的憤怒與氣勢。"},{"s":"「相如持其璧睨柱，欲以擊柱」主要運用了：","o":["動作描寫","心理描寫","景物描寫","外貌描寫"],"e":"一「持」一「睨」，表現決絕。"},{"s":"「秦王坐章台見相如……傳以示美人及左右」從側面表現：","o":["秦王傲慢無禮，無意償城","秦王謙虛，願與眾人共賞寶物","秦王慷慨，打算把璧賜給美人","美人好奇"],"e":"以細節反襯藺相如的判斷。"},{"s":"文中大量記錄藺相如的言辭，作用是：","o":["以語言描寫表現其機智勇敢、能言善辯","增加篇幅，使傳記內容更豐富","顯示作者文采，炫耀修辭技巧","記錄秦國的法律條文和外交禮節，作為後世參考"],"e":"如「大王必欲急臣，臣頭今與璧俱碎於柱矣」。"},{"s":"繆賢追述藺相如勸他請罪一事，屬於：","o":["插敘","倒敘","順敘","補敘結尾"],"e":"插入往事，側面表現藺相如的智謀。"},{"s":"廉頗與藺相如兩人的形象構成：","o":["對比——一勇一智，一直率一寬容","完全相同","互不相干","象徵——以二人象徵趙國的文武兩種官職"],"e":"合傳中互相映襯。"},{"s":"藺相如「均之二策，寧許以負秦曲」的說話方式是：","o":["分析利害後作出判斷","直接命令，要求趙王照做","抒發感情，表達對秦的不滿","講述故事"],"e":"條理清晰，見其謀略。"},{"s":"「大王必欲急臣，臣頭今與璧俱碎於柱矣」的語言特點是：","o":["語氣堅決，表現視死如歸","語氣溫和，表現謙恭有禮","充滿疑問，表現猶豫不決","謙卑求饒"],"e":"以語言描寫突出膽識。"},{"s":"「秦王與羣臣相視而嘻」運用了：","o":["神態描寫","心理描寫","景物描寫","外貌描寫"],"e":"寫出秦君臣的驚愕與無奈。"},{"s":"「相如張目叱之，左右皆靡」中「左右皆靡」的作用是：","o":["襯托藺相如的威勢","描寫秦王勇敢，不怕藺相如","表現左右忠誠","交代地點，說明事情發生在宮殿"],"e":"以旁人之退襯托主角之勇。"},{"s":"澠池之會中秦御史書趙王鼓瑟，藺相如即召趙御史書秦王擊缻，兩者構成：","o":["對照呼應，表現藺相如針鋒相對","重複累贅，兩次記錄同類事件削弱文章","倒敘，先寫結果再寫原因","伏筆，為下文將相和作準備"],"e":"一來一往，旗鼓相當。"},{"s":"「以趙十五城為秦王壽」對「以秦之咸陽為趙王壽」的寫法是：","o":["針鋒相對，以更大代價回敬","比喻，以城池比喻壽禮","誇張，渲染秦國的貪婪","設問，自問自答，引出藺相如的回應"],"e":"秦臣要趙以十五城為秦王祝壽，藺相如即要秦以咸陽為趙王祝壽，以更大代價針鋒相對地回敬，寸步不讓。"},{"s":"廉頗「我見相如，必辱之」的語言描寫，表現廉頗：","o":["直率魯莽、居功自傲","狡猾奸詐、工於心計","膽小怕事、畏首畏尾","謙虛"],"e":"語言符合人物身分性格。"},{"s":"藺相如「引車避匿」，其後才說明原因，這種寫法是：","o":["先抑後揚","先揚後抑","倒敘","插敘"],"e":"先寫退讓，後揭顧全大局的胸襟。"},{"s":"「今兩虎共鬥，其勢不俱生」運用了：","o":["比喻","擬人","誇張","反問"],"e":"以兩虎喻廉藺二人。"},{"s":"舍人請辭的情節在文中的作用是：","o":["襯托並引出藺相如的遠見與胸襟","表現舍人忠誠，願意為主人赴湯蹈火","轉換話題，交代舍人的出身","交代背景，說明舍人的職責"],"e":"以舍人之淺見映襯相如之識見。"},{"s":"「鄙賤之人，不知將軍寬之至此也」通過語言描寫表現廉頗：","o":["知錯能改、坦率真誠","傲慢自大、目中無人","虛偽造作、言不由衷","膽怯"],"e":"自稱鄙賤，見其悔悟。"},{"s":"「秦亦不以城予趙，趙亦終不予秦璧」的句式特點是：","o":["對偶式總結，交代事件結果","反問句，質疑兩國的誠意","比喻句，以城池比喻和氏璧","排比"],"e":"簡潔收束完璧歸趙一事。"},{"s":"本節錄屬於《史記》中的哪種體例？","o":["列傳（合傳）","本紀（記帝王事跡）","世家","書（記典章制度）"],"e":"把廉頗、藺相如合為一傳。"}];
+
+var SECTIONS = {
+  content: { key: 'content', title: '內容理解', Q: Q_CONTENT },
+  vocab: { key: 'vocab', title: '字詞解釋', Q: Q_VOCAB },
+  rhetorical: { key: 'rhetorical', title: '寫作手法', Q: Q_RHET }
+};
+var SEC_ORDER = ['content', 'vocab', 'rhetorical'];
+var MAX_TOTAL = 60;
+
+function shuffle(a) {
+  a = a.slice();
+  for (var i = a.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var t = a[i]; a[i] = a[j]; a[j] = t;
+  }
+  return a;
+}
+function $(id) { return document.getElementById(id); }
+
+/* state per section */
+var state = {};
+SEC_ORDER.forEach(function (k) {
+  state[k] = { order: null, cur: 0, answers: [], finished: false, score: 0 };
+});
+var currentSec = 'content';
+
+function studentInfo() {
+  return {
+    class: ($('cls').value || '').trim().toUpperCase(),
+    studentId: ($('sid').value || '').trim(),
+    name: ($('sname').value || '').trim()
+  };
+}
+function requireStudent() {
+  var s = studentInfo();
+  if (!s.class || !s.studentId || !s.name) {
+    alert('請先填寫班別、學號、姓名，再開始或交卷。');
+    $('studentCard').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    $('cls').focus();
+    return null;
+  }
+  return s;
+}
+
+function prepareOrder(secKey) {
+  var Q = SECTIONS[secKey].Q;
+  return Q.map(function (q) {
+    return { s: q.s, e: q.e, ans: q.o[0], o: shuffle(q.o) };
+  });
+}
+
+function startSection(secKey, force) {
+  currentSec = secKey;
+  var st = state[secKey];
+  if (force || !st.order) {
+    st.order = prepareOrder(secKey);
+    st.cur = 0;
+    st.answers = [];
+    st.finished = false;
+    st.score = 0;
+  }
+  document.querySelectorAll('.tabs button').forEach(function (b) {
+    var on = b.getAttribute('data-sec') === secKey;
+    b.setAttribute('aria-selected', on ? 'true' : 'false');
+    b.classList.toggle('active', on);
+  });
+  $('finalResult').hidden = true;
+  if (st.finished) {
+    $('panel-quiz').hidden = true;
+    showSecResult(secKey);
+  } else {
+    $('secResult').hidden = true;
+    $('panel-quiz').hidden = false;
+    showQuestion();
+  }
+  updateOverall();
+}
+
+function setSecScore(secKey) {
+  var st = state[secKey];
+  var s = 0;
+  for (var i = 0; i < st.answers.length; i++) {
+    if (st.answers[i] && st.answers[i].ok) s++;
+  }
+  st.score = s;
+  return s;
+}
+
+function updateOverall() {
+  var done = 0, totalScore = 0;
+  SEC_ORDER.forEach(function (k) {
+    var st = state[k];
+    var answered = st.answers.filter(function (a) { return a; }).length;
+    done += answered;
+    totalScore += setSecScore(k);
+  });
+  $('overallFill').style.width = (done / MAX_TOTAL * 100) + '%';
+  $('overallBar').setAttribute('aria-valuenow', String(done));
+  $('overallText').textContent = done + ' / ' + MAX_TOTAL + ' 題　總分 ' + totalScore;
+  $('scContent').textContent = state.content.score;
+  $('scVocab').textContent = state.vocab.score;
+  $('scRhet').textContent = state.rhetorical.score;
+
+  var allDone = SEC_ORDER.every(function (k) { return state[k].finished; });
+  if (allDone) {
+    $('submitEarlyBtn').hidden = false;
+    showFinal();
+  }
+}
+
+function showQuestion() {
+  var st = state[currentSec];
+  var q = st.order[st.cur];
+  var N = st.order.length;
+  st._picked = null;
+  st._checked = false;
+  $('stem').textContent = (st.cur + 1) + '. ' + q.s;
+  var box = $('opts');
+  box.innerHTML = '';
+  q.o.forEach(function (t, i) {
+    var l = document.createElement('label');
+    l.className = 'opt';
+    var r = document.createElement('input');
+    r.type = 'radio'; r.name = 'opt'; r.value = String(i);
+    var sp = document.createElement('span');
+    sp.textContent = String.fromCharCode(65 + i) + '. ' + t;
+    l.appendChild(r); l.appendChild(sp);
+    r.addEventListener('change', function () {
+      if (st._checked) return;
+      st._picked = i;
+      Array.prototype.forEach.call(box.children, function (c) { c.classList.remove('sel'); });
+      l.classList.add('sel');
+      $('checkBtn').disabled = false;
+    });
+    box.appendChild(l);
+  });
+  $('fb').hidden = true;
+  $('checkBtn').hidden = false;
+  $('checkBtn').disabled = true;
+  $('nextBtn').hidden = true;
+  $('secDoneBtn').hidden = true;
+  var answered = st.answers.filter(function (a) { return a; }).length;
+  $('secFill').style.width = (answered / N * 100) + '%';
+  $('secBar').setAttribute('aria-valuenow', String(answered));
+  $('secProgText').textContent = '第 ' + (st.cur + 1) + ' / ' + N + ' 題';
+  $('secScoreText').textContent = '本節答對：' + st.score;
+}
+
+function checkAnswer() {
+  var st = state[currentSec];
+  if (st._checked || st._picked === null) return;
+  st._checked = true;
+  $('checkBtn').disabled = true;
+  var q = st.order[st.cur];
+  var ok = q.o[st._picked] === q.ans;
+  st.answers[st.cur] = { ok: ok, pick: q.o[st._picked], ans: q.ans, idx: st.cur };
+  var labs = $('opts').children;
+  for (var i = 0; i < labs.length; i++) {
+    labs[i].querySelector('input').disabled = true;
+    if (q.o[i] === q.ans) labs[i].classList.add('ok');
+    else if (i === st._picked) labs[i].classList.add('bad');
+  }
+  var fb = $('fb');
+  fb.hidden = false;
+  fb.className = 'fb ' + (ok ? 'ok' : 'bad');
+  fb.textContent = (ok ? '✔ 答對了！' : '✘ 答錯了。正確答案：' + q.ans) + '　解說：' + q.e;
+  setSecScore(currentSec);
+  updateOverall();
+  $('secScoreText').textContent = '本節答對：' + st.score;
+  var answered = st.answers.filter(function (a) { return a; }).length;
+  var N = st.order.length;
+  $('secFill').style.width = (answered / N * 100) + '%';
+  $('checkBtn').hidden = true;
+  if (st.cur < N - 1) $('nextBtn').hidden = false;
+  else $('secDoneBtn').hidden = false;
+}
+
+function nextQuestion() {
+  var st = state[currentSec];
+  if (!st._checked) return;
+  if (st.cur < st.order.length - 1) {
+    st.cur++;
+    showQuestion();
+  }
+}
+
+function finishSection() {
+  var st = state[currentSec];
+  if (!st._checked) return;
+  st.finished = true;
+  setSecScore(currentSec);
+  updateOverall();
+  showSecResult(currentSec);
+  saveDraft();
+  if (SEC_ORDER.every(function (k) { return state[k].finished; })) {
+    showFinal();
+  }
+}
+
+function showSecResult(secKey) {
+  var st = state[secKey];
+  var N = SECTIONS[secKey].Q.length;
+  $('panel-quiz').hidden = true;
+  $('secResult').hidden = false;
+  $('secResultTitle').textContent = SECTIONS[secKey].title + '・本節完成';
+  $('secFinal').textContent = '得分：' + st.score + ' / ' + N;
+  var p = st.score / N;
+  $('secFinalMsg').textContent = p >= 0.8 ? '表現出色，繼續保持！' : p >= 0.5 ? '不錯，請重溫答錯的題目。' : '請細閱課文及解說，再試一次。';
+  var rv = $('secReview');
+  rv.innerHTML = '';
+  st.order.forEach(function (q, i) {
+    var a = st.answers[i];
+    if (!a) return;
+    var d = document.createElement('div');
+    d.className = 'rv';
+    var t = document.createElement('div');
+    t.className = 't';
+    t.textContent = (i + 1) + '. ' + q.s;
+    var r = document.createElement('div');
+    r.className = a.ok ? 'c' : 'w';
+    r.textContent = (a.ok ? '✔ 你的答案：' : '✘ 你的答案：') + a.pick + (a.ok ? '' : '｜正確答案：' + q.ans);
+    var e = document.createElement('div');
+    e.textContent = '解說：' + q.e;
+    d.appendChild(t); d.appendChild(r); d.appendChild(e);
+    rv.appendChild(d);
+  });
+  var idx = SEC_ORDER.indexOf(secKey);
+  var nextKey = idx < SEC_ORDER.length - 1 ? SEC_ORDER[idx + 1] : null;
+  $('goNextSecBtn').hidden = !nextKey;
+  $('goNextSecBtn').textContent = nextKey ? '前往「' + SECTIONS[nextKey].title + '」' : '';
+  $('goNextSecBtn').onclick = nextKey ? function () {
+    startSection(nextKey, false);
+    $('zice').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  } : null;
+  $('submitEarlyBtn').hidden = !SEC_ORDER.every(function (k) { return state[k].finished; });
+}
+
+function wrongSummary() {
+  var parts = [];
+  SEC_ORDER.forEach(function (k) {
+    var st = state[k];
+    var wrong = [];
+    st.answers.forEach(function (a, i) {
+      if (a && !a.ok) wrong.push(i + 1);
+    });
+    if (wrong.length) parts.push(SECTIONS[k].title + '錯題:' + wrong.join(','));
+  });
+  return parts.join('；') || '全對';
+}
+
+function buildPayload(stu) {
+  var sc = state.content.score;
+  var sv = state.vocab.score;
+  var sr = state.rhetorical.score;
+  var total = sc + sv + sr;
+  return {
+    timestamp: new Date().toISOString(),
+    class: stu.class,
+    studentId: stu.studentId,
+    name: stu.name,
+    scoreContent: sc,
+    scoreVocab: sv,
+    scoreRhetorical: sr,
+    scoreTotal: total,
+    maxTotal: MAX_TOTAL,
+    percent: Math.round(total / MAX_TOTAL * 1000) / 10,
+    answersSummary: wrongSummary(),
+    userAgent: navigator.userAgent || ''
+  };
+}
+
+function showFinal() {
+  if (!SEC_ORDER.every(function (k) { return state[k].finished; })) return;
+  $('finalResult').hidden = false;
+  var total = state.content.score + state.vocab.score + state.rhetorical.score;
+  $('finalScore').textContent = '總分：' + total + ' / ' + MAX_TOTAL;
+  $('finalDetail').innerHTML =
+    '內容理解 ' + state.content.score + '/20　｜　字詞解釋 ' + state.vocab.score +
+    '/20　｜　寫作手法 ' + state.rhetorical.score + '/20<br>正確率 ' +
+    (Math.round(total / MAX_TOTAL * 1000) / 10) + '%';
+  saveDraft();
+}
+
+function saveDraft() {
+  try {
+    var stu = studentInfo();
+    var draft = {
+      student: stu,
+      scores: {
+        content: state.content.score,
+        vocab: state.vocab.score,
+        rhetorical: state.rhetorical.score
+      },
+      finished: SEC_ORDER.map(function (k) { return { k: k, done: state[k].finished, score: state[k].score }; }),
+      summary: wrongSummary(),
+      savedAt: new Date().toISOString()
+    };
+    localStorage.setItem('lianpo_daodu_draft', JSON.stringify(draft));
+  } catch (e) {}
+}
+
+function submitToSheet() {
+  var stu = requireStudent();
+  if (!stu) return;
+  if (!SEC_ORDER.every(function (k) { return state[k].finished; })) {
+    alert('請先完成三個部分的全部題目，再交卷。');
+    return;
+  }
+  var payload = buildPayload(stu);
+  saveDraft();
+  var msg = $('submitMsg');
+  msg.hidden = false;
+
+  if (!GAS_WEBAPP_URL) {
+    msg.textContent = '⚠ 尚未設定 GAS_WEBAPP_URL，成績只保存在本機（localStorage 草稿），未能上傳老師試算表。請老師在 HTML 腳本頂部貼上 Apps Script 網頁應用程式網址。';
+    return;
+  }
+  msg.textContent = '正在上傳成績…';
+  $('submitBtn').disabled = true;
+  // text/plain + no-cors avoids Apps Script CORS preflight issues; doPost still receives body
+  fetch(GAS_WEBAPP_URL, {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+    body: JSON.stringify(payload)
+  }).then(function () {
+    msg.textContent = '✔ 已送出交卷請求。若老師試算表「交卷紀錄」出現新列，即表示成功。';
+    $('submitBtn').disabled = false;
+  }).catch(function () {
+    msg.textContent = '✘ 上傳失敗，請檢查網絡後再試。本機草稿已保存。';
+    $('submitBtn').disabled = false;
+  });
+}
+
+
+/* 語譯顯示／隱藏 */
+var yuyiToggle = $('yuyiToggle');
+var yuyiBody = $('yuyiBody');
+if (yuyiToggle && yuyiBody) {
+  yuyiToggle.addEventListener('click', function () {
+    var hide = !yuyiBody.hidden;
+    yuyiBody.hidden = hide;
+    yuyiToggle.setAttribute('aria-expanded', hide ? 'false' : 'true');
+    yuyiToggle.textContent = hide ? '顯示語譯' : '隱藏語譯';
+  });
+}
+
+/* video */
+function renderVideo() {
+  var area = $('videoArea');
+  var link = $('videoTitleLink');
+  if (YOUTUBE_ID) {
+    link.href = 'https://www.youtube.com/watch?v=' + encodeURIComponent(YOUTUBE_ID);
+    area.innerHTML = '<div class="video-wrap"><iframe src="https://www.youtube.com/embed/' +
+      encodeURIComponent(YOUTUBE_ID) + '" title="寶寶老師陪你快速溫範文｜第一集《廉頗藺相如列傳》" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe></div>';
+  } else {
+    link.href = '#shipin';
+    link.removeAttribute('target');
+    area.innerHTML = '<div class="video-box"><strong>影片尚未設定</strong><span>請老師在腳本頂部填寫 <code>const YOUTUBE_ID = "……";</code></span><span>標題：寶寶老師陪你快速溫範文｜第一集《廉頗藺相如列傳》</span></div>';
+  }
+}
+
+/* events */
+document.querySelectorAll('.tabs button').forEach(function (b) {
+  b.addEventListener('click', function () {
+    startSection(b.getAttribute('data-sec'), false);
+  });
+});
+$('checkBtn').addEventListener('click', checkAnswer);
+$('nextBtn').addEventListener('click', nextQuestion);
+$('secDoneBtn').addEventListener('click', finishSection);
+$('retrySecBtn').addEventListener('click', function () {
+  startSection(currentSec, true);
+  $('zice').scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
+$('submitBtn').addEventListener('click', submitToSheet);
+$('submitEarlyBtn').addEventListener('click', function () {
+  showFinal();
+  $('finalResult').scrollIntoView({ behavior: 'smooth', block: 'center' });
+});
+$('retryAllBtn').addEventListener('click', function () {
+  if (!confirm('確定全部重做？目前得分將重置。')) return;
+  SEC_ORDER.forEach(function (k) {
+    state[k] = { order: null, cur: 0, answers: [], finished: false, score: 0 };
+  });
+  $('finalResult').hidden = true;
+  startSection('content', true);
+  updateOverall();
+});
+
+/* restore draft note */
+try {
+  var d = localStorage.getItem('lianpo_daodu_draft');
+  if (d) {
+    var draft = JSON.parse(d);
+    if (draft.student) {
+      if (draft.student.class) $('cls').value = draft.student.class;
+      if (draft.student.studentId) $('sid').value = draft.student.studentId;
+      if (draft.student.name) $('sname').value = draft.student.name;
+    }
+  }
+} catch (e) {}
+
+renderVideo();
+updateOverall();
+// 可先作答；交卷時才強制填班別／學號／姓名
+startSection('content', false);
+
+})();
+</script>
+</body>
+</html>
